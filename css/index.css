@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+    font-style: normal;   
+}
+
+/* VALORES PREDETERMINADOS */
+
+body {
+    color:#0000;
+    background-color:#F4F4F4;
+}
+
+h1 {
+    color:#000000;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-family: "Inconsolata", monospace;
+    color:#000000;
+
+}
+
+/* HEADER */
+
+#header_home {
+    width: 100%;
+    height: 80vh;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:aquamarine;
+    padding: 3em;
+}
+
+header > p {
+    font-size: 3em;
+    color:#000000;
+    text-align: center;
+}
+  
+
+/* VIDEO PRESENTACIÓN */
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+/* MISION, VISION, VALORES */
+
+/* CARUSEL */
+
+#carousel {
+    background-color: blueviolet;
+}
