@@ -52,14 +52,49 @@ header > p {
 /* VIDEO PRESENTACIÓN */
 
 h1 {
-    font-size: 4em;
+    font-size: 10em;
     text-align: center;
 }
 
 /* MISION, VISION, VALORES */
+
+#informacion {
+    padding: 2em 4em;
+}
 
 /* CARUSEL */
 
 #carousel {
     background-color: blueviolet;
 }
+
+.carousel_items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  
+.carousel_item {
+    position: relative;
+    min-width: 100%;
+    height: 60vh;
+    transition: all 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* TRABAJOS DESTACADOS */
+
+.full-photo img, .grid-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
