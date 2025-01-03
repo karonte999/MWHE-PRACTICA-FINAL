@@ -15,13 +15,13 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
     // gsap code here!
-    gsap.registerPluging(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.square', {
+    gsap.to(".square", {
         rotation:360,
-        duration: 5,
+        duration: 2,
         ScrollTrigger: {
-            trigger: '.square',
+            trigger: ".square",
             markers: true,
             scrub: true
         }
