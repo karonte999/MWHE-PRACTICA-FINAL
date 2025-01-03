@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.to(Main, {
         scrollTrigger: {
             trigger: Main,
-            start: 50,
+            start: 300,
             markers: true,
-            scrub: true
+            // scrub: true
         },
-        duration: 2,
+        duration: 3,
         text: {
             value: "DESIGN AGENCY",
             oldClass: "start",
