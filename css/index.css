@@ -151,6 +151,12 @@ h1 {
     gap: 10px;
 }
 
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #fe79ae;
+}
+
 /* FOOTER NO TOCAR NO ESTA TERMINADO */
 
 .footer {
