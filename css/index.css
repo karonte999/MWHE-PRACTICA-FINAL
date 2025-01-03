@@ -12,7 +12,7 @@ body {
     background-color:#F4F4F4;
 }
 
-h1 {
+h1,h2 {
     color:#000000;
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
@@ -21,7 +21,6 @@ h1 {
 p {
     font-family: "Inconsolata", monospace;
     color:#000000;
-
 }
 
 
@@ -88,7 +87,31 @@ h1 {
 /* MISION, VISION, VALORES */
 
 #informacion {
+    margin: 2em;
     padding: 2em 4em;
+}
+
+#welcome {
+    font-size: 2em;
+    text-align: center;
+}
+
+.usinformation {
+    padding: 2em 4em;
+}
+
+.myrowitems {
+    align-items: center;
+    padding: 2em;
+    margin-bottom: 6em;
+}
+
+.myrowitems h2{
+    font-size: 2em;
+}
+
+.myrowitems p {
+    font-size: 1.5em;
 }
 
 /* CARUSEL */
