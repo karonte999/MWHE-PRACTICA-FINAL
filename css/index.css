@@ -5,7 +5,23 @@
     font-style: normal;   
 }
 
+
+
+
+
+
+
+
+
+
 /* VALORES PREDETERMINADOS */
+
+
+
+
+
+
+
 
 body {
     color:#0000;
@@ -24,7 +40,22 @@ p {
 }
 
 
+
+
+
+
+
+
+
 /* MENU NO TOCAR NO ESTA TERMINADO*/
+
+
+
+
+
+
+
+
 
 .navbar {
     background-color: #FEFE79;
@@ -52,7 +83,25 @@ p {
     font-size: 0.75rem;
 }
 
+
+
+
+
+
+
+
+
+
 /* HEADER */
+
+
+
+
+
+
+
+
+
 
 #header_home {
     width: 100%;
@@ -75,16 +124,43 @@ header > p {
     color:#000000;
     text-align: center;
 }
+
+
+
+
+
+
   
 
 /* VIDEO PRESENTACIÓN */
+
+
+
+
+
+
+
 
 h1 {
     font-size: 10em;
     text-align: center;
 }
 
+
+
+
+
+
 /* MISION, VISION, VALORES */
+
+
+
+
+
+
+
+
+
 
 #informacion {
     margin: 2em;
@@ -114,7 +190,25 @@ h1 {
     font-size: 1.5em;
 }
 
+
+
+
+
+
+
+
+
+
 /* CARUSEL */
+
+
+
+
+
+
+
+
+
 
 #carousel {
     background-color: blueviolet;
@@ -137,7 +231,23 @@ h1 {
     background-attachment: fixed;
 }
 
+
+
+
+
+
+
+
 /* TRABAJOS DESTACADOS */
+
+
+
+
+
+
+
+
+
 
 .full-photo img, .grid-4 img {
     width: 100%;
@@ -151,13 +261,47 @@ h1 {
     gap: 10px;
 }
 
+<<<<<<< Updated upstream
 .square {
     width: 150px;
     height: 150px;
     background-color: #fe79ae;
 }
+=======
+
+
+
+
+
+
+
+
+
+
+/* FAQ */
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 /* FOOTER NO TOCAR NO ESTA TERMINADO */
+
+
+
+
+
+
+
+
+
 
 .footer {
     background-color: #FEFE79;
