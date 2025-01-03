@@ -8,24 +8,24 @@
 
 
 
-
-// NO FUNCIONA 
-
 // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
 
     // gsap code here!
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".square", {
-        rotation:360,
-        duration: 2,
-        ScrollTrigger: {
-            trigger: ".square",
+
+    gsap.to(".welcome", {
+        scrollTrigger: {
+            trigger: ".welcome",
+            start: 400,
             markers: true,
             scrub: true
-        }
+        },
+        x: 700,
+        duration: 3,
     })
+
 
 });
   
