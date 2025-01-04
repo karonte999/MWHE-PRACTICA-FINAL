@@ -26,6 +26,7 @@
 body {
     color:#0000;
     background-color:#F4F4F4;
+    overflow-x: hidden;
 }
 
 h1,h2 {
@@ -273,7 +274,16 @@ h1 {
 
 
 
+/* MEET US */
 
+
+
+
+
+
+.meet_us {
+    overflow-x: hidden;
+}
 
 
 
