@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: Main,
             start: 300,
             markers: true,
-            // scrub: true
+            scrub: true
         },
         duration: 3,
         text: {
