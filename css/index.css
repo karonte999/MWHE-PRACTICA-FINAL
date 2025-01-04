@@ -290,6 +290,10 @@ h1 {
     background-color: #FEFE79;
 }
 
+#faq h2{
+    font-size: 3em;
+}
+
 
 
 
@@ -318,6 +322,12 @@ h1 {
     padding: 4em;
     padding-bottom: 1em;
     color: #000000;
+}
+
+#applications h3{
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 1.5em;
 }
 
 
