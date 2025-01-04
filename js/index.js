@@ -12,7 +12,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
     // gsap code here!
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(Flip,ScrollTrigger,TextPlugin);
 
 
     gsap.to(".welcome", {
@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         x: 700,
         duration: 3,
+    })
+
+    const Main = document.getElementsByClassName("title");
+
+    gsap.to(Main, {
+        scrollTrigger: {
+            trigger: Main,
+            start: 300,
+            markers: true,
+            scrub: true
+        },
+        duration: 3,
+        text: {
+            value: "DESIGN AGENCY",
+            oldClass: "start",
+            newclass: "end",
+        }
     })
 
 
