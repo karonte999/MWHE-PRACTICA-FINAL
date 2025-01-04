@@ -15,14 +15,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(Flip,ScrollTrigger,TextPlugin);
 
 
-    gsap.to(".welcome", {
+    gsap.to(".myrowitems1", {
         scrollTrigger: {
-            trigger: ".welcome",
-            start: 400,
+            trigger: ".myrowitems1",
+            start: "top 50%",
             markers: true,
             scrub: true
         },
-        x: 700,
+        x: 200,
+        duration: 3,
+    })
+
+    gsap.to(".myrowitems2", {
+        scrollTrigger: {
+            trigger: ".myrowitems2",
+            start: "top 50%",
+            markers: true,
+            scrub: true
+        },
+        x: -200,
+        duration: 3,
+    })
+
+    gsap.to(".myrowitems3", {
+        scrollTrigger: {
+            trigger: ".myrowitems3",
+            start: "top 50%",
+            markers: true,
+            scrub: true
+        },
+        x: 200,
         duration: 3,
     })
 
