@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             markers: true,
             scrub: true
         },
-        x: 200,
+        x: 100,
         duration: 3,
     })
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             markers: true,
             scrub: true
         },
-        x: -200,
+        x: -100,
         duration: 3,
     })
 
@@ -44,9 +44,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
             markers: true,
             scrub: true
         },
-        x: 200,
+        x: 100,
         duration: 3,
     })
+
+    gsap.from(".introduccion", {
+        opacity: 0,
+        filter: "blur(10px)", // Comienza desenfocado
+        duration: 1.5,
+    });
 
     const Main = document.getElementsByClassName("title");
 
@@ -64,6 +70,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
             newclass: "end",
         }
     })
+
+   
+    
+    // Seleccionamos el contenedor del carrusel
+    const carousel = document.querySelector(".carousel");
+
+    // Calculamos el ancho total del carrusel
+    const totalWidth = carousel.scrollWidth - window.innerWidth; // Ancho total menos el tamaño de la ventana
+
+    // Animamos el desplazamiento del carrusel
+    gsap.to(carousel, {
+        scrollTrigger: {
+            trigger: "#carousel", // El área que activa la animación
+            start: "top center", // Inicia cuando el inicio del contenedor esté en la parte superior de la ventana
+            end: () => `+=${totalWidth}`, // La animación se extiende hasta cubrir todo el ancho
+            scrub: true, // Sincroniza el desplazamiento con el scroll
+            pin: true, // Fija el contenedor durante el scroll
+        },
+        x: -totalWidth, // Desplazamos el carrusel hacia la izquierda
+        ease: "none", // Movimiento sin aceleración ni desaceleración
+        
+    });
+
+
+
+    
+    
+
 
 
 });
