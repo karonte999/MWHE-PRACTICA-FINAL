@@ -18,3 +18,6 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 
 
 
+
+
+
