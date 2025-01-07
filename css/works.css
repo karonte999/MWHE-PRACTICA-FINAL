@@ -1,82 +1,48 @@
-* {
-    margin: 0;
-    padding: 0em;
-    box-sizing: border-box;
-    font-style: normal;   
-}
-
-
-body {
-    color:#0000;
-    background-color:#F4F4F4;
-}
-
-h1 {
-    color:#000000;
-    font-family: "Afacad", sans-serif;
-    font-optical-sizing: auto;
-}
-
-p {
-    font-family: "Inconsolata", monospace;
-    color:#000000;
-
-}
-
-
-/* GALERIA */ 
 /* COMMAND + SHIFT + / para ocultar en mac */
 
-.gallery-item {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin-left: 5vh;
+}
+
+.gallery-container {
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    /* margin-left: 10vh; */
+}
+
+.gallery-item {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .gallery-item img {
-    transition: transform 0.4s ease, filter 0.4s ease;
     display: block;
     width: 100%;
-    height: auto;
+    max-width: 300px;
     border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto bajo la imagen */
+.gallery-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
 }
 
 /* Hover Effects */
 .gallery-item:hover img {
     transform: scale(1.1);
-    filter: grayscale(50%);
-}
-
-/* Option 1: Overlay Fade */
-.gallery-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    border-radius: 8px;
-}
-
-.gallery-item:hover::after {
-    opacity: 1;
-}
-
-/* Option 2: Rotate Effect */
-.gallery-item:hover img {
-    transform: scale(1.1) rotate(3deg);
-}
-
-/* Option 3: Border Animation */
-.gallery-item {
-    border: 3px solid transparent;
-    transition: border 0.4s ease;
+    filter: brightness(0.8);
 }
 
 .gallery-item:hover {
-    border: 3px solid #007bff;
+    opacity: 1;
+    z-index: 4;
 }
