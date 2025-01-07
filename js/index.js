@@ -60,16 +60,46 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: Main,
             start: 300,
-            markers: true,
+            // markers: true,
             scrub: true
         },
         duration: 3,
         text: {
-            value: "DESIGN AGENCY",
+            value: "Design agency",
             oldClass: "start",
             newclass: "end",
         }
     })
+
+
+    // COLOR FONDO
+
+    gsap.to("body", {
+        backgroundColor: ["#fefe79", "#f4f4f4"],
+        scrollTrigger: {
+          trigger: "body", 
+          start: "top top", 
+          end: "bottom bottom", // Final de la animación (scroll hasta el final)
+          scrub: true,
+        },
+    });
+
+
+
+    
+    // CURSOR
+
+    const cursor = document.getElementById("custom-cursor");
+
+    document.addEventListener("mousemove", (event) => {
+    gsap.to(cursor, {
+        x: event.clientX,
+        y: event.clientY,
+        duration: 0.1, // Hace que el movimiento sea fluido
+        ease: "power2.out",
+    });
+    });
+
 
    
     
