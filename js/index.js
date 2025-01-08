@@ -101,6 +101,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+
+    // HOVER
+
+        
+        const images = document.querySelectorAll(".rounded");
+
+        images.forEach(image => {
+
+    // Animación cuando el mouse entra sobre la imagen
+        image.addEventListener("mouseover", () => {
+        gsap.to(image, { 
+        scale: 1.1,          
+        x: -10,           
+        duration: 0.3,     
+        ease: "power1.out" 
+        });
+    });
+
+    // Animación cuando el mouse sale de la imagen
+    image.addEventListener("mouseout", () => {
+        gsap.to(image, { 
+        scale: 1,   
+        x: 0,            
+        duration: 0.3,    
+        ease: "power1.out"  
+        });
+    });
+    });
+
+
+
    
     
     // Seleccionamos el contenedor del carrusel
@@ -112,14 +143,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Animamos el desplazamiento del carrusel
     gsap.to(carousel, {
         scrollTrigger: {
-            trigger: "#carousel", // El área que activa la animación
-            start: "top center", // Inicia cuando el inicio del contenedor esté en la parte superior de la ventana
-            end: () => `+=${totalWidth}`, // La animación se extiende hasta cubrir todo el ancho
-            scrub: true, // Sincroniza el desplazamiento con el scroll
-            pin: true, // Fija el contenedor durante el scroll
+            trigger: "#carousel", 
+            start: "top center", 
+            end: () => `+=${totalWidth}`, 
+            scrub: true, 
+            pin: true, 
         },
-        x: -totalWidth, // Desplazamos el carrusel hacia la izquierda
-        ease: "none", // Movimiento sin aceleración ni desaceleración
+        x: -totalWidth, 
+        ease: "none", 
         
     });
 

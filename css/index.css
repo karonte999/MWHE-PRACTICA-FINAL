@@ -127,10 +127,10 @@ p {
     padding: 3em;
 }
 
-header > p {
-    font-size: 3em;
+.introduccion {
+    font-size: 2em;
     color:#000000;
-    text-align: center;
+    text-align:left;
 }
 
 
