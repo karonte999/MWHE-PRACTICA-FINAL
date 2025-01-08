@@ -137,13 +137,7 @@ header > p {
 
 
 
-
-  
-
 /* VIDEO PRESENTACIÓN */
-
-
-
 
 
 
@@ -177,11 +171,6 @@ h1 {
 
 
 /* MISION, VISION, VALORES */
-
-
-
-
-
 
 
 
@@ -250,14 +239,6 @@ h1 {
   .card-body {
     border-color: none;
   }
-
-
-
-
-
-
-
-
   
 
 
@@ -265,12 +246,6 @@ h1 {
 
 
 /* TRABAJOS DESTACADOS */
-
-
-
-
-
-
 
 
 
@@ -316,9 +291,13 @@ h1 {
 /* MEET US */
 
 
+
+
 #meet_us {
     overflow-x: hidden;
 }
+
+
 
 
 /* FORMULARIO */
@@ -344,8 +323,8 @@ h1 {
 
 
 #partners {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 
