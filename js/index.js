@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: ".myrowitems1",
             start: "top 50%",
-            markers: true,
+            // markers: true,
             scrub: true
         },
         x: 100,
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: ".myrowitems2",
             start: "top 50%",
-            markers: true,
+            // markers: true,
             scrub: true
         },
         x: -100,
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: ".myrowitems3",
             start: "top 50%",
-            markers: true,
+            // markers: true,
             scrub: true
         },
         x: 100,

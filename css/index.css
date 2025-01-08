@@ -187,18 +187,24 @@ h1 {
 }
 
 .usinformation {
-    padding: 2em;
-    width: 80%;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.usinformation h3 {
+  font-size: 1.8em;
+  color:#000000;
+  font-family: "Inconsolata", monospace;
 }
 
 .myrowitems {
     align-items: center;
-    padding: 2em;
-    margin-bottom: 2em;
+    padding: 0 2em;
+    margin-bottom: 0;
 }
 
 .myrowitems h2{
-    font-size: 3em;
+    font-size: 7em;
 }
 
 .myrowitems p {
