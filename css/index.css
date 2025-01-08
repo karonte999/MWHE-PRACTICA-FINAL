@@ -302,7 +302,6 @@ h1 {
 
 
 
-
 #gradient {
   padding: 2em;
 }
@@ -314,15 +313,7 @@ h1 {
 
 
 
-
-
-
-
 /* MEET US */
-
-
-
-
 
 
 #meet_us {
@@ -330,20 +321,9 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* FORMULARIO */
 
   
-
 
 #applications {
     padding: 4em;
@@ -360,16 +340,12 @@ h1 {
 
 
 
-
-
 /* MARQUEE */
 
 
-
-
 #partners {
-  padding-top: 2em;
-  padding-bottom: 3em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 

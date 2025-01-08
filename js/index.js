@@ -177,16 +177,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 var colors = new Array(
-    [230,226,6],
-    [223,227,2],
-    [206,227,2],
-    [171,229,6]);
+    [236,229,11],
+    [236,219,11],
+    [229,188,6],
+    [229,161,8]);
   
   var step = 0;
   //color table indices for: 
   // current color left
   // next color left
-  // current color right
+  // current color right 
   // next color right
   var colorIndices = [0,1,2,3];
   
@@ -233,12 +233,21 @@ var colors = new Array(
     }
   }
   
-  setInterval(updateGradient,8);
+  setInterval(updateGradient,5);
   
   
   
   
   
+
+
+//   POP OVER
   
+
+
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+    trigger: 'focus'
+  })
   
 
