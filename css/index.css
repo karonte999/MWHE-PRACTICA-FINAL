@@ -215,6 +215,7 @@ h1 {
 
 
 
+
 /* CARUSEL */
 
   
@@ -236,56 +237,10 @@ h1 {
     border-radius: 10px; /* Bordes redondeados si lo deseas */
   }
 
-<<<<<<< Updated upstream
   .card-body {
     border-color: none;
   }
   
-=======
-
-
-
-/*  PATROCINADORES  */
-.marquee {
-  width: 100%;
-  border-top: 6px solid rgb(198, 59, 161);
-  border-bottom: 6px solid rgb(198, 59, 161);
-  overflow: hidden;
-  /* background-color: rgba(255, 255, 255, 0.769); */
-  color: rgb(198, 59, 161);
-  
-}
-
-.marquee li {
-  font-size: 40px;
-}
-
-.marquee__content {
-  display: flex;
-  list-style: none;
-  animation: scrolling 12s linear infinite;
-}
-
-.marquee__item {
-  flex-shrink: 0;
-}
-
-@keyframes scrolling {
-    0% { transform: translateX(0) }
-    100% { transform: translateX(-100%) }
-}
-
-
-
-
-  
-
-
-
->>>>>>> Stashed changes
-
-
-
 
 
 /* TRABAJOS DESTACADOS */
