@@ -25,7 +25,7 @@
 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inconsolata:wght@200..900&family=Forum&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
         
             <!-- FAV ICON -->
 
@@ -54,28 +54,21 @@
 
 
     <body>
+        <div id="custom-cursor"></div>
       
         <!-- MENU--> 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">WONDER WAVES</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="menu-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <div class="menu" style="display: flex;">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">WORKS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                  </li>
-                </div> 
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">WORKS</a>
+                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
             </div>
           </div>
         </nav>
@@ -103,10 +96,14 @@
          
         <section id="presentacion">
           <h1 class="title">
-              WONDER WAVES
+              Wonder Waves
           </h1>
 
         </section>
+
+
+
+
 
         <!-- MISIÓN, VISIÓN Y VALORES  -->
 
@@ -114,7 +111,7 @@
 
           <div class="welcome">
             <p>
-              Welcome to Wonder Waves. We are a branding agency specializing in strategy, brand design and digital product design. We work globally with leading companies in various industries to create products, services and brands based on a strategic approach. Since 2003, we have been committed to building the present by imagining the best version of the future.
+              Welcome to Wonder Waves. We are a <span style="font-family: 'Forum', serif;">branding agency</span> specializing in strategy, brand design and digital product design. We work globally with leading companies in various industries to create products, services and brands based on a strategic approach. Since 2003, we have been committed to <span>building the present by imagining the best version of the future.</span>
             </p>
           </div>
 
@@ -170,7 +167,7 @@
 
         <div class="themes">
           <h5>
-            Brand Identity Art direction Print Packaging
+            <span style="font-family: 'Forum', serif;">Brand</span>Identity ✱ <span style="font-family: 'Forum', serif;">Art</span> direction ✱ Print ✱ <span style="font-family: 'Forum', serif;"> Packaging</span>
           </h5>
     
         </div>
@@ -180,21 +177,48 @@
 
 
         <!-- CARRUSEL TRABAJOS DESTACADOS -->
-        <section id="carousel">
-          <div class="carousel-container">
-            <div class="carousel">
-              <div class="carousel-item active">
-                <img src="media_works/MAGAZINE_OK.png" class="d-block w-100" alt="...">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3">
+                <img src="media_works/mockup_revista.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="media_works/mockup_revista.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <img src="media_works/TODO_EL_FEED_PRESENTACION.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="media_works/PAPERS.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <img src="media_works/IG_CHUPACHUPS_ptresentación_OK.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
 
 
@@ -206,15 +230,15 @@
             <div class="row g-3">
               <!-- Foto completa -->
               <div class="col-md-6 full-photo">
-                <img src="https://picsum.photos/200/200" class="img-fluid" alt="Foto completa">
+                <img src="https://picsum.photos/200/200" class="img-fluid" alt="Foto completa" class="destacado">
               </div>
               <!-- Grid de 4 fotos -->
               <div class="col-md-6">
                 <div class="grid-4">
-                  <img src="https://picsum.photos/200/200" alt="Foto 1">
-                  <img src="https://picsum.photos/200/200" alt="Foto 2">
-                  <img src="https://picsum.photos/200/200" alt="Foto 3">
-                  <img src="https://picsum.photos/200/200" alt="Foto 4">
+                  <img src="https://picsum.photos/200/200" alt="Foto 1" class="destacado">
+                  <img src="https://picsum.photos/200/200" alt="Foto 2" class="destacado">
+                  <img src="https://picsum.photos/200/200" alt="Foto 3" class="destacado">
+                  <img src="https://picsum.photos/200/200" alt="Foto 4" class="destacado">
                 </div>
               </div>
             </div>
@@ -315,19 +339,11 @@
         <footer class="footer">
           <div class="container">
             <div class="footer-section">
-              <h4>WORKS</h4>
-              <ul>
-                <li><a href="#">ILLUSTRATION</a></li>
-                <li><a href="#">FOTOGRAPHY</a></li>
-                <li><a href="#">PACKAGING</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
               <h4>PURPOSE</h4>
               <ul>
-                <li><a href="#">MISIÓN</a></li>
-                <li><a href="#">VISIÓN</a></li>
-                <li><a href="#">VALORES</a></li>
+                <li><a href="#">MISSION</a></li>
+                <li><a href="#">VISION</a></li>
+                <li><a href="#">VALUES</a></li>
               </ul>
             </div>
             <div class="footer-section">
