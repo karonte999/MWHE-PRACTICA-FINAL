@@ -657,24 +657,24 @@ h1 {
   /* GALERÍA */
 
   .gallery-container {
-    height: auto; /* Permite que la galería se ajuste al contenido */
-    overflow-y: auto; /* Habilita desplazamiento vertical si es necesario */
+    height: auto;
+    overflow-y: auto;
   }
 
   .gallery-item {
-    position: static; /* Para que se dispongan de forma normal en un flujo vertical */
-    margin: 20px auto; /* Centramos cada item */
-    transform: none; /* Eliminamos la transformación */
+    position: static;
+    margin: 20px auto;
+    transform: none; 
   }
 
   .gallery-item img {
-    max-width: 90%; /* Reducimos el tamaño de las imágenes */
+    max-width: 90%; 
     margin: 0 auto;
-    border-radius: 10px; /* Opcional, agrega bordes redondeados */
+    border-radius: 10px;
   }
 
   .gallery-text {
-    font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    font-size: 0.9rem;
   }
 
 
