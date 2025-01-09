@@ -679,6 +679,19 @@ h1 {
 
 
 
+  .footer .container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1.5rem; 
+  }
+
+  .footer-section {
+    text-align: center; 
+  }
+
+
+
+
 
 }
 
@@ -705,6 +718,8 @@ h1 {
   .myrowitems p {
       font-size: 0.9rem;
   } */
+
+  
 }
 
 
