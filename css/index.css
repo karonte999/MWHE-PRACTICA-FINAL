@@ -551,6 +551,21 @@ h1 {
 }
 
 
+@media (max-width: 900px) {
+
+  .usinformation .row {
+    flex-direction: column;
+
+  }
+
+  .usinformation .row div {
+    width: 100%;
+  }
+
+
+
+}
+
 
 @media (max-width: 768px) {
   /* #informacion {
