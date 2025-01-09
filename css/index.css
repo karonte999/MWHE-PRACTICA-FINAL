@@ -32,7 +32,6 @@
 
 
 body {
-    color:#0000;
     background-color:#f4f4f4;
     overflow-x: hidden;
 }
@@ -127,10 +126,16 @@ p {
     padding: 3em;
 }
 
-.introduccion {
-    font-size: 2em;
-    color:#000000;
+/* .introduccion {
+    font-size: 5em;
     text-align:left;
+} */
+
+#typewriter {
+    font-size: 2em;
+    text-align:left;
+    color: #000000;
+    font-family: "Inconsolata", monospace;
 }
 
 
@@ -139,7 +144,10 @@ p {
 
 /* VIDEO PRESENTACIÓN */
 
-
+.video-fondo-home {
+    background-color: #ff2929;
+    width: 100%;
+}
 
 
 
@@ -166,6 +174,7 @@ h1 {
     font-size: 7em;
     font-style: italic;
 }
+
 
 
 
@@ -392,8 +401,7 @@ h1 {
 
 
 .footer {
-    background-color: #FEFE79;
-    color: #fff;
+    background-color: #ffffff;
     padding: 2rem 0;
 }
 
@@ -415,6 +423,7 @@ h1 {
 .footer-section ul {
     list-style: none;
     padding: 0;
+    color: #000000;
 }
 
 .footer-section ul li {
@@ -430,7 +439,7 @@ h1 {
 
 .footer-section ul li a:hover {
     transition: color 0.3s ease;
-    color: #ff2929;
+    color: #FEFE79;
 }
 
 .footer .social-links li {
