@@ -559,7 +559,11 @@ h1 {
   }
 
   .usinformation .row div {
-    width: 100%;
+    width: 80%;
+  }
+
+  .myrowitems {
+    padding: 2em;
   }
 
 
