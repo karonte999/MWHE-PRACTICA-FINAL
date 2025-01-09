@@ -131,6 +131,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    gsap.to(".rotate", { 
+        rotation: 900,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '.rotate',
+          scrub: 2,
+        }
+    });
+
+
 
    
     

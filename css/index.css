@@ -114,7 +114,7 @@ p {
 
 #header_home {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     top: calc(-100vh + 3em);
     z-index: 1;
     background-size: cover;
@@ -127,10 +127,20 @@ p {
     padding: 3em;
 }
 
+#header_home > .container > .row{
+  align-items: center;
+}
+
 .introduccion {
     font-size: 2em;
     color:#000000;
     text-align:left;
+}
+
+.imagen_main {
+  max-width: 80%; 
+  height: auto;      /* Mantiene la proporción original */
+  object-fit: contain;
 }
 
 
@@ -144,7 +154,7 @@ p {
 
 
 h1 {
-    font-size: 10em;
+    font-size: 12em;
     text-align: center;
 }
 
@@ -189,6 +199,7 @@ h1 {
 .usinformation {
     padding: 2em 0;
     width: 100%;
+    margin-top: 3em;
 }
 
 .usinformation h3 {
@@ -216,6 +227,22 @@ h1 {
 
 
 
+/* ROTATE */
+.rotate {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.rotate > img {
+  width: 30%;
+  height: 30%;
+}
+
+
+
 
 
 
@@ -238,13 +265,20 @@ h1 {
   
   .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px; /* Bordes redondeados si lo deseas */
+    border-radius: 30px; 
+  }
+
+  .card {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0 2em;
   }
 
   .card-body {
     border-color: none;
+    background-color: transparent;
   }
   
 
