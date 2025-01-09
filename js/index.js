@@ -185,6 +185,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    // HOVER IMAGENES---------------------------------------
+
+    gsap.fromTo(".destacado", {
+        opacity: 0, 
+        scale: 0.8, 
+        y: 50, 
+      },
+      {
+        opacity: 1, // Opacidad final
+        scale: 1, // Tamaño normal
+        y: 0, 
+        duration: 1.5, 
+        stagger: 0.3, 
+        ease: "power4.out", 
+        scrollTrigger: {
+          trigger: ".destacado",
+          start: "top 50%",
+          // markers: true,
+          scrub: true
+        },
+      }
+    );
+
+
 
 });
 
