@@ -1,12 +1,5 @@
 /* COMMAND + SHIFT + / para ocultar en mac */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    /* margin-left: 5vh; */
-}
-
-
 .py-5 {
     padding-top: 3rem;
     padding-bottom: 3rem;
