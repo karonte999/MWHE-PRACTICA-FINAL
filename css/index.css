@@ -150,6 +150,9 @@ p {
   object-fit: contain;
 }
 
+.div_home {
+  align-items: center;
+}
 
 
 
@@ -518,5 +521,6 @@ h1 {
 
 
 /* MEDIA QUERY */
+
 
 

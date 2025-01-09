@@ -45,11 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // GSAP--------------------------------
 
-// use a script tag or an external JS file
-document.addEventListener("DOMContentLoaded", (event) => {
+  document.addEventListener("DOMContentLoaded", (event) => {
 
-    // gsap code here!
+    
     gsap.registerPlugin(Flip,ScrollTrigger,TextPlugin);
 
 
@@ -86,11 +86,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 3,
     })
 
-    gsap.from(".introduccion", {
-        opacity: 0,
-        filter: "blur(10px)", // Comienza desenfocado
-        duration: 1.5,
-    });
+    // gsap.from(".introduccion", {
+    //     opacity: 0,
+    //     filter: "blur(10px)", // Comienza desenfocado
+    //     duration: 1.5,
+    // });
+
+
+
+
+    // DESIGN AGENCY-----------------
 
     const Main = document.getElementsByClassName("title");
 
@@ -110,7 +115,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
 
 
-    // COLOR FONDO
+    // COLOR FONDO----------------------
 
     gsap.to("body", {
         backgroundColor: ["#fefe79", "#f4f4f4"],
@@ -125,7 +130,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     
-    // CURSOR
+    // CURSOR-----------------------------
 
     const cursor = document.getElementById("custom-cursor");
 
@@ -133,21 +138,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.to(cursor, {
         x: event.clientX,
         y: event.clientY,
-        duration: 0.1, // Hace que el movimiento sea fluido
+        duration: 0.1, 
         ease: "power2.out",
     });
     });
 
 
 
-    // HOVER
+    // HOVER---------------------------
 
         
         const images = document.querySelectorAll(".rounded");
 
         images.forEach(image => {
 
-    // Animación cuando el mouse entra sobre la imagen
+        // Animación cuando el mouse entra sobre la imagen
         image.addEventListener("mouseover", () => {
         gsap.to(image, { 
         scale: 1.1,          
@@ -157,8 +162,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
-    // Animación cuando el mouse sale de la imagen
-    image.addEventListener("mouseout", () => {
+        // Animación cuando el mouse sale de la imagen
+        image.addEventListener("mouseout", () => {
         gsap.to(image, { 
         scale: 1,   
         x: 0,            
@@ -168,7 +173,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     });
 
-
+    // LOGO ROTANDO-----------------------------------
+    
     gsap.to(".rotate", { 
         rotation: 900,
         duration: 1,
@@ -177,34 +183,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           scrub: 2,
         }
     });
-
-
-    
-
-
-
-   
-    
-    // Seleccionamos el contenedor del carrusel
-    const carousel = document.querySelector(".carousel");
-
-    // Calculamos el ancho total del carrusel
-    const totalWidth = carousel.scrollWidth - window.innerWidth; // Ancho total menos el tamaño de la ventana
-
-    // Animamos el desplazamiento del carrusel
-    gsap.to(carousel, {
-        scrollTrigger: {
-            trigger: "#carousel", 
-            start: "top center", 
-            end: () => `+=${totalWidth}`, 
-            scrub: true, 
-            pin: true, 
-        },
-        x: -totalWidth, 
-        ease: "none", 
-        
-    });
-
 
 
 
