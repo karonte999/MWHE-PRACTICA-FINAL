@@ -623,8 +623,24 @@ h1 {
     padding: 2em;
   }
 
+  .usinformation h3 {
+    text-align: center;
+  }
 
 
+
+}
+
+@media (max-width: 800px) {
+
+  #presentacion h1 {
+    font-size: 6em;
+  }
+
+  .themes h5 {
+    font-size: 5em;
+  }
+  
 }
 
 
