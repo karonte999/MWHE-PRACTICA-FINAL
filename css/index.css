@@ -55,7 +55,7 @@ p {
 
 
 
-/* MENU NO TOCAR NO ESTA TERMINADO*/
+/* MENU */
 
 
 
@@ -69,7 +69,7 @@ p {
     background-color: #fefe79;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
+    font-family: "Inconsolata", monospace;
 }
 
 .container-fluid {
@@ -77,10 +77,13 @@ p {
 }
 
 .navbar-brand {
-    font-size: 0.75rem;
+    padding-right: 10rem;
 
 }
 
+.navbar-nav {
+    padding-left: 15rem;
+}
 .menu-collapse {
     padding-right: 6rem;
 }
