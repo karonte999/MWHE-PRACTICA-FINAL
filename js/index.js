@@ -8,6 +8,44 @@
 
 
 
+// TYPE.JS
+
+document.addEventListener("DOMContentLoaded", () => {
+    const targetElement = document.getElementById("typewriter");
+  
+    // La frase que queremos escribir
+    const text = "Endlessly shaping, endlessly refining. A design mindset fueled by curiosity and the pursuit of better.";
+  
+    // Configuración de la velocidad de escritura
+    const typingSpeed = 50; // milisegundos por carácter
+  
+    // Función para escribir el texto
+    function typeText(element, text, speed, callback) {
+      let index = 0;
+  
+      function type() {
+        if (index < text.length) {
+          element.textContent += text[index];
+          index++;
+          setTimeout(type, speed);
+        } else if (callback) {
+          callback();
+        }
+      }
+  
+      type();
+    }
+  
+    // Iniciar el efecto de escritura
+    typeText(targetElement, text, typingSpeed);
+  });
+  
+
+
+
+
+
+
 // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
 
