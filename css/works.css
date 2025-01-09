@@ -3,7 +3,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    margin-left: 5vh;
+    /* margin-left: 5vh; */
+}
+
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
 }
 
 
@@ -25,8 +32,8 @@ body {
 .gallery-item img {
     display: block;
     /* width: 100%; */
-    max-width: 300px;
-    border-radius: 8px;
+    max-width: 400px;
+    /* border-radius: 8px; */
     transition: transform 0.4s ease, filter 0.4s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
