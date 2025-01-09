@@ -522,9 +522,31 @@ h1 {
 
 /* ------------------------MEDIA QUERY-------------------------*/
 
+
+/* HOME */
+
+
+
 /* Media queries para pantallas pequeñas */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+
+  h1 {
+    font-size: 8em;
+  }
+  
+  .welcome {
+    font-size: 1.5em;
+  }
+
+  .myrowitems h2 {
+    font-size: 5em;
+  }
+
+  .usinformation h3 {
+    font-size: 1.5em;
+  }
+
   
 }
 
@@ -555,5 +577,7 @@ h1 {
 
 
 
-
+/* Móvil 750
+Tablet 1024
+Laptop 1440 */
 
