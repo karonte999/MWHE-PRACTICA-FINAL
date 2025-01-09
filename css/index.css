@@ -520,7 +520,40 @@ h1 {
 
 
 
-/* MEDIA QUERY */
+/* ------------------------MEDIA QUERY-------------------------*/
+
+/* Media queries para pantallas pequeñas */
+
+@media (max-width: 1000px) {
+  
+}
+
+
+
+@media (max-width: 768px) {
+  /* #informacion {
+      margin: 1rem;
+      padding: 1.5rem 2%;
+  }
+
+  .welcome {
+      font-size: 1.5rem;
+  }
+
+  .usinformation h3 {
+      font-size: 1.2rem;
+  }
+
+  .myrowitems h2 {
+      font-size: 2.5rem;
+  }
+
+  .myrowitems p {
+      font-size: 0.9rem;
+  } */
+}
+
+
 
 
 
