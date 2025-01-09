@@ -322,16 +322,11 @@ var colors = new Array(
   
   
   
+// AOS-------------------------
+
+AOS.init();
+
   
 
 
-//   POP OVER
-  
-
-
-
-const popover = new bootstrap.Popover('.popover-dismiss', {
-    trigger: 'focus'
-  })
-  
 
