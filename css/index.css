@@ -650,6 +650,36 @@ h1 {
   .welcome {
     font-size: 2em;
   }
+
+
+
+
+  /* GALERÍA */
+
+  .gallery-container {
+    height: auto; /* Permite que la galería se ajuste al contenido */
+    overflow-y: auto; /* Habilita desplazamiento vertical si es necesario */
+  }
+
+  .gallery-item {
+    position: static; /* Para que se dispongan de forma normal en un flujo vertical */
+    margin: 20px auto; /* Centramos cada item */
+    transform: none; /* Eliminamos la transformación */
+  }
+
+  .gallery-item img {
+    max-width: 90%; /* Reducimos el tamaño de las imágenes */
+    margin: 0 auto;
+    border-radius: 10px; /* Opcional, agrega bordes redondeados */
+  }
+
+  .gallery-text {
+    font-size: 0.9rem; /* Reducimos el tamaño del texto */
+  }
+
+
+
+
 }
 
 
