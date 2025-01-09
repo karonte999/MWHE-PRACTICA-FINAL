@@ -144,11 +144,12 @@ p {
     font-family: "Inconsolata", monospace;
 }
 
-.imagen_main {
+.imagen_main > img {
   max-width: 80%; 
   height: auto;      /* Mantiene la proporción original */
   object-fit: contain;
 }
+
 
 
 
