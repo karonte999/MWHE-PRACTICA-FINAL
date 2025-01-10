@@ -72,6 +72,13 @@ p {
     font-family: "Inconsolata", monospace;
 }
 
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
 .container-fluid {
     padding-left: 3rem;
 }
@@ -98,7 +105,7 @@ p {
 }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
+  border: var(--bs-border-width) solid hsla(0, 0%, 0%, 0.3);
 }
 
 .navbar-toggler:focus {
