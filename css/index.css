@@ -97,7 +97,13 @@ p {
     font-size: 0.75rem;
 }
 
+.navbar-toggler {
+  border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
+}
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 
 
 
