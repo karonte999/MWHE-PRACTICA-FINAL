@@ -105,7 +105,7 @@ p {
 }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid hsla(0, 0%, 0%, 0.3);
+  border: var(--bs-border-width) solid hsla(0, 0%, 0%, 0);
 }
 
 .navbar-toggler:focus {
