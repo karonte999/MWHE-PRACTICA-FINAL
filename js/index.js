@@ -42,9 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 
-
-
-
   // GSAP--------------------------------
 
   document.addEventListener("DOMContentLoaded", (event) => {
@@ -219,11 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.gallery-item');
     const containerWidth = window.innerWidth;
@@ -242,20 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
 // GRADIENT
-
-
-
-
-
-
-
-
 
 
 
@@ -318,15 +297,9 @@ var colors = new Array(
   }
   
   setInterval(updateGradient,5);
-  
-  
+
   
   
 // AOS-------------------------
 
 AOS.init();
-
-  
-
-
-
